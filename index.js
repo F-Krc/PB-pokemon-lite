@@ -7,7 +7,9 @@ class Pokemon {
   }
 
   learnAttackSkill(attackSkill) {
-    this.skills.push(attackSkill);
+    if(attackSkill instanceof AttackSkill){
+       this.skills.push(attackSkill);
+    }
   }
 
   showStatus() {
